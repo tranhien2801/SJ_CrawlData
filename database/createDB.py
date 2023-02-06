@@ -141,6 +141,7 @@ def createTableJudgment():
                             `date_issued` date not null comment 'ngày công bố',
                             `date_upload` date not null comment 'ngày đăng lên hệ thống',
                             `url` varchar(255) not null comment 'link bản án',
+                            `pdf_viewer` varchar(255) not null comment 'link hiển thị bản án',
                             `file_download` varchar(255) not null comment 'link download bản án',
                             `corrections` int comment 'số lượng đính chính',
                             `count_vote` int comment 'số lượng bầu chọn',

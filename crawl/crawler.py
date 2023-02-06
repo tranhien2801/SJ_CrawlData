@@ -73,6 +73,9 @@ def crawl_judgment(url):
     if s.find('div', class_='search_left_pub details_pub') == None:
         return None
 
+    judgment_pdf = s.find('iframe')['src']
+    judgment_pdf = constant.BASE_URL + judgment_pdf
+
     judgment = s.find('div', class_='search_left_pub details_pub')
 
     judgment_header = judgment.find(
@@ -195,6 +198,7 @@ def crawl_judgment(url):
         'count_eyes': count_eye,
         'count_download': count_download,
         'file_download': link_download,
-        'url': url
+        'url': url,
+        'pdf_viewer': judgment_pdf
     }
     return jdg

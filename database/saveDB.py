@@ -58,6 +58,7 @@ def save_judgment(jdg):
     count_download = jdg['count_download']
     file_download = jdg['file_download']
     url = jdg['url']
+    pdf_viewer = jdg['pdf_viewer']
     uid = str(uuid.uuid4()).replace("-", "")
 
     insert_judgment = '''INSERT INTO `judgment` (uid,
@@ -72,19 +73,20 @@ def save_judgment(jdg):
                                                 date_issued,
                                                 date_upload,
                                                 url,
+                                                pdf_viewer,
                                                 file_download,
                                                 corrections,
                                                 count_vote,
                                                 count_eyes,
                                                 count_download,
                                                 created) 
-                      VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)'''
+                      VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)'''
     today = date.today()
     cursor.execute(
         insert_judgment,
         (uid, judgment_number, judgment_name, type_document, judgment_level,
          court_uid, case_uid, judgment_content, judgment_text, date_issued,
-         date_upload, url, file_download, corrections, count_vote, count_eyes, count_download, today))
+         date_upload, url, pdf_viewer, file_download, corrections, count_vote, count_eyes, count_download, today))
     db.commit()
 
     print("judgment saved " + str(cursor.lastrowid))

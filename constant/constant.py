@@ -14,6 +14,8 @@ PORT = "3306"
 
 URL_SEARCH = "https://congbobanan.toaan.gov.vn/0t15at1cvn/Tra-cu-ban-an"
 
+BASE_URL = "https://congbobanan.toaan.gov.vn/"
+
 ABSOLUTEPATH = 'BackgroundData/'
 
 SUCCESSFUL_RESPONSE = 200
