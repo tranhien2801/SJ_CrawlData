@@ -114,7 +114,7 @@ def loadJudgment():
                     judgment_text = crawler.get_text_PDF(link_download)
 
                 jdg = {
-                    'uid': uid,
+                    'uid': '',
                     'judgment_number': judgment_number,
                     'date_issued': date_issued,
                     'date_upload': date_upload,
