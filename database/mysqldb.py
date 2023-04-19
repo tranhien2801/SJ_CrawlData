@@ -72,7 +72,7 @@ def saveJudgment(jdg):
          count_download, today))
     db.commit()
 
-    print("judgment saved " + str(cursor.lastrowid))
+    # print("judgment saved " + str(cursor.lastrowid))
 
 def loadJudgment():
     for i in range(1, 783):

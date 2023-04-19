@@ -81,7 +81,7 @@ def runCrawl(start, total_page, date_from, date_to, view_state):
             # THREAD_FLAG = False
 
         fn = time.time()
-        print("done: " + str(page) + ": " + str(fn-st) + "--" + str(THREAD_FLAG))
+        # print("done: " + str(page) + ": " + str(fn-st) + "--" + str(THREAD_FLAG))
 
     #function start threads
     def doingThread():

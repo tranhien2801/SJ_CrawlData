@@ -147,6 +147,7 @@ def createTableJudgment():
                             `count_vote` int comment 'số lượng bầu chọn',
                             `count_eyes` int comment'số lượng đã xem',
                             `count_download` int comment 'số lượng tải',
+                            `precedent` SMALLINT NOT NULL DEFAULT 0, 
                             `created` DATE NOT NULL,
                             `modified` DATE,
                             `state` SMALLINT NOT NULL DEFAULT 1,

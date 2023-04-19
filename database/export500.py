@@ -214,7 +214,7 @@ def export():
                     count_download, today))
                 db_export.commit()
 
-                print("judgment saved " + str(cursor.lastrowid))
+                # print("judgment saved " + str(cursor.lastrowid))
             except BaseException as e:
                 print(e)
 

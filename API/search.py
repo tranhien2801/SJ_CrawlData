@@ -16,15 +16,15 @@ CORS(app)
 pd.options.display.max_colwidth=160
 
 mydb = mysql.connector.connect(
-    host="localhost",
+    host ="localhost",
     user="root",
     password="conan1411",
-    database="court"
+    database="search_judgment"
 )
 
 mycursor = mydb.cursor(dictionary=True)
 
-query = "SELECT j.uid, j.judgment_number, j.judgment_name, j.type_document, j.judgment_level, j.judgment_content, j.date_issued, j.date_upload, j.url, j.pdf_viewer, j.file_download, j.corrections, j.count_vote, j.count_eyes, j.count_download, jc.court_name, ja.case_name FROM court.judgment j  LEFT JOIN court.court jc ON j.court_uid = jc.uid LEFT JOIN court.case ja ON j.case_uid = ja.uid WHERE j.state = 1;"
+query = "SELECT j.uid, j.judgment_number, j.judgment_name, j.type_document, j.judgment_level, j.judgment_content, j.date_issued, j.date_upload, j.url, j.pdf_viewer, j.file_download, j.corrections, j.count_vote, j.count_eyes, j.count_download, jc.court_name, ja.case_name, ja.case_type, jc.court_level FROM search_judgment.judgment j  LEFT JOIN search_judgment.court jc ON j.court_uid = jc.uid LEFT JOIN search_judgment.case ja ON j.case_uid = ja.uid WHERE j.state = 1;"
 mycursor.execute(query)
 judgments = mycursor.fetchall()
 number_judgment = len(judgments)   
@@ -76,9 +76,10 @@ def recommendation():
     }
     return jsonify(response) 
 
-@app.route('/judgment/list', methods=['POST'])
+@app.route('/judgment/bm25', methods=['POST'])
 def search_judgments():
     # try:
+        print("Bắt đầu tìm kiếm theo BM25.........")
         filter = request.get_json()
         # Dịch nội dung tìm kiếm sang tiếng Anh để tìm từ đồng nghĩa
         translatorEnToVi = GoogleTranslator(source='en', target='vi')
@@ -98,7 +99,7 @@ def search_judgments():
                 new_sentences_trans.add(sentence_trans)
         for i in new_sentences_trans:
             print(i)    
-        indexes = search_list(new_sentences_trans, 50)
+        indexes = search_list(new_sentences_trans, 25)
         # indexes = search(content_filter, 50)
         
         data = []

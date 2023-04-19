@@ -144,6 +144,12 @@ def crawl_judgment(url):
         elif li.find('label') != None and li.find('label').text.strip().find(
                 'Áp dụng án lệ') != -1:
             precedent = li.find('span').get_text().strip()  #áp dụng án lệ
+            if precedent.find('Không') != -1:
+                precedent = 0
+            else:
+                precedent = 1
+                print(precedent)
+
         elif li.find('label') != None and li.find('label').text.strip().find(
                 'Đính chính') != -1:
             corrections = int(li.find('span').get_text().strip())  #đính chính
@@ -198,6 +204,7 @@ def crawl_judgment(url):
         'count_eyes': count_eye,
         'count_download': count_download,
         'file_download': link_download,
+        'precedent': precedent,
         'url': url,
         'pdf_viewer': judgment_pdf
     }

@@ -5,7 +5,7 @@ USER = "root"
 
 PASSWORD = "conan1411"
 
-DATABASE = "court"
+DATABASE = "search_judgment"
 
 PORT = "3306"
 

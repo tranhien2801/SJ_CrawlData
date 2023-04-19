@@ -7331,4 +7331,228 @@ https://congbobanan.toaan.gov.vn/2ta1116928t1cvn/chi-tiet-ban-an --- 1364 (HY000
 380
 617
 01/11/2022
+30/11/20222023-04-07 22:45:54.430602 Error: 'NoneType' object is not subscriptable
+86
+785
+01/11/2022
+30/11/20222023-04-07 22:50:06.809591 Error: 'NoneType' object is not subscriptable
+162
+785
+01/11/2022
+30/11/20222023-04-07 23:03:13.965001 Error: 'NoneType' object is not subscriptable
+413
+785
+01/11/2022
+30/11/20222023-04-07 23:10:23.618443 Error: 'NoneType' object is not subscriptable
+549
+785
+01/11/2022
+30/11/20222023-04-07 23:10:42.688406 Error: HTTPSConnectionPool(host='congbobanan.toaan.gov.vn', port=443): Max retries exceeded with url: /5ta1090402t1cvn/11Ngoc__Duc_2022_HG_tai_toa.pdf (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000018C93985040>: Failed to establish a new connection: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond'))
+551
+785
+01/11/2022
+30/11/20222023-04-19 17:49:35.021792 Error: 'NoneType' object is not subscriptable
+102
+802
+01/11/2022
+30/11/20222023-04-19 17:53:30.269911 Error: 'NoneType' object is not subscriptable
+178
+802
+01/11/2022
+30/11/20222023-04-19 18:06:59.343498 Error: 'NoneType' object is not subscriptable
+429
+802
+01/11/2022
+30/11/20222023-04-19 18:18:52.813320 Error: 'NoneType' object is not subscriptable
+102
+802
+01/11/2022
+30/11/20222023-04-19 18:34:46.299940 Error: 'NoneType' object is not subscriptable
+102
+802
+01/11/2022
+30/11/20222023-04-19 18:38:32.097451 Error: 'NoneType' object is not subscriptable
+178
+802
+01/11/2022
+30/11/20222023-04-19 18:50:30.933957 Error: 'str' object is not callable
+424
+802
+01/11/2022
+30/11/2022https://congbobanan.toaan.gov.vn/2ta1169879t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168046t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1169516t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167789t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167044t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168574t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166754t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166811t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1169836t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168042t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167796t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167046t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166591t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1169514t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168469t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1169838t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166812t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167730t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1169502t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168036t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166601t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167050t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168442t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1169839t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166823t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167549t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1169236t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167976t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167022t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166599t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168310t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167485t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166969t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166597t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1169129t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168296t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167993t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167482t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1169854t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166824t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166930t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166581t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168130t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167972t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1169170t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167468t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1169874t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166578t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166833t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168138t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167966t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168909t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166944t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167446t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166834t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166572t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168129t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167951t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168908t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166926t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167444t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1169851t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166570t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167964t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168923t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167366t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1169777t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168128t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166934t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166491t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166835t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167947t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168907t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167382t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1169724t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168127t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166808t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167946t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168922t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166356t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166924t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167365t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166814t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166228t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168905t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166923t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167350t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168126t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1169722t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167931t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166817t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1169737t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168904t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167330t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167829t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166252t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166912t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166799t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1169670t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167349t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168125t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168903t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167820t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166765t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166260t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167348t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166911t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168921t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166769t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167842t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1169644t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168134t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166317t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168849t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1169643t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167841t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167179t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166316t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166920t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166751t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168856t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167840t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166318t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167211t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168133t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1169600t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166902t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166762t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168669t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167838t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167106t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166320t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168112t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166763t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1169568t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167107t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167837t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168592t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166890t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166247t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168111t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166774t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1167836t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166170t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166900t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1169543t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168554t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166741t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168097t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1169424t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166897t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166742t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166896t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1169470t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168098t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1169505t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166753t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1166860t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168101t1cvn/chi-tiet-ban-an --- 'precedent'
+https://congbobanan.toaan.gov.vn/2ta1168115t1cvn/chi-tiet-ban-an --- 'precedent'
+2023-04-19 18:59:49.332011 Error: 'NoneType' object is not subscriptable
+102
+802
+01/11/2022
+30/11/20222023-04-19 19:03:35.866998 Error: 'NoneType' object is not subscriptable
+178
+802
+01/11/2022
+30/11/20222023-04-19 19:15:06.756139 Error: 'NoneType' object is not subscriptable
+429
+802
+01/11/2022
+30/11/20222023-04-19 19:21:35.763916 Error: 'NoneType' object is not subscriptable
+565
+802
+01/11/2022
 30/11/2022
