@@ -115,17 +115,17 @@ def search_judgments():
             check = True
             if  filter['court_level'] != None and filter['court_level'] != '' and judgments[index]['court_level'] != filter['court_level']:
                 check = False
-            if  filter['judgment_level'] != '' and filter['judgment_level'] != None and judgments[index]['judgment_level'] != filter['judgment_level']: 
+            if  filter['judgment_level'] != None and filter['judgment_level'] != '' and judgments[index]['judgment_level'] != filter['judgment_level']: 
                 check = False
-            if  filter['type_document'] != '' and filter['type_document'] != None and judgments[index]['type_document'] != filter['type_document']: 
+            if  filter['type_document'] != None and filter['type_document'] != '' and judgments[index]['type_document'] != filter['type_document']: 
                 check = False
-            if  filter['case_type'] != '' and filter['case_type'] != None and judgments[index]['case_type'] != filter['case_type']: 
+            if  filter['case_type'] != None and filter['case_type'] != '' and judgments[index]['case_type'] != filter['case_type']: 
                 check = False
-            if filter['date_from'] != '' and filter['date_from'] != None and judgments[index]['date_issued'] < datetime.strptime(filter['date_from'], '%Y-%m-%d').date():
+            if filter['date_from'] != None and filter['date_from'] != '' and judgments[index]['date_issued'] < datetime.strptime(filter['date_from'], '%Y-%m-%d').date():
                 check = False
-            if filter['date_to'] != '' and filter['date_to'] != None and judgments[index]['date_issued'] > datetime.strptime(filter['date_to'], '%Y-%m-%d').date():
+            if filter['date_to'] != None and filter['date_to'] != '' and judgments[index]['date_issued'] > datetime.strptime(filter['date_to'], '%Y-%m-%d').date():
                 check = False
-            if filter['precedent'] != '' and filter['precedent'] != None and (filter['precedent'] != True or judgments[index]['precedent'] == 0):
+            if filter['precedent'] != None and filter['precedent'] != '' and (filter['precedent'] != True or judgments[index]['precedent'] == 0):
                 check = False
             if check:
                 data.append(judgments[index])

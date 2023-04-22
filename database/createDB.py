@@ -137,7 +137,6 @@ def createTableJudgment():
                             `court_uid` VARCHAR(32) not null comment 'id tòa án',
                             `case_uid` VARCHAR(32) not null comment 'id vụ việc',
                             `judgment_content` LONGTEXT not null comment 'nội dung tóm tắt bản án',
-                            `judgment_text` LONGTEXT not null comment 'toàn bộ nội dung bản án từ pdf',
                             `date_issued` date not null comment 'ngày công bố',
                             `date_upload` date not null comment 'ngày đăng lên hệ thống',
                             `url` varchar(255) not null comment 'link bản án',

@@ -70,7 +70,6 @@ def save_judgment(jdg):
                                                 court_uid,
                                                 case_uid,
                                                 judgment_content,
-                                                judgment_text,
                                                 date_issued,
                                                 date_upload,
                                                 url,
@@ -82,12 +81,12 @@ def save_judgment(jdg):
                                                 count_download,
                                                 precedent,
                                                 created) 
-                      VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)'''
+                      VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)'''
     today = date.today()
     cursor.execute(
         insert_judgment,
         (uid, judgment_number, judgment_name, type_document, judgment_level,
-         court_uid, case_uid, judgment_content, judgment_text, date_issued,
+         court_uid, case_uid, judgment_content, date_issued,
          date_upload, url, pdf_viewer, file_download, corrections, count_vote, count_eyes, count_download, precedent, today))
     db.commit()
 
