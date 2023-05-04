@@ -72,7 +72,7 @@ def createTableCourt():
                     cursor.execute(insert_court, (uid, court, level, today))
                     db.commit()
 
-    print("create table court")
+    # print("create table court")
 
 def createTableCase():
     today = date.today()
@@ -125,7 +125,7 @@ def createTableCase():
                         cursor.execute(insert_case, (uid, case_show, case, today))
                         db.commit()
 
-    print("create table case")
+    # print("create table case")
 
 def createTableJudgment():
     create_table_judgment = """CREATE TABLE IF NOT EXISTS `judgment` (
@@ -137,6 +137,8 @@ def createTableJudgment():
                             `court_uid` VARCHAR(32) not null comment 'id tòa án',
                             `case_uid` VARCHAR(32) not null comment 'id vụ việc',
                             `judgment_content` LONGTEXT not null comment 'nội dung tóm tắt bản án',
+                            `judgment_text` LONGTEXT not null comment 'toàn bộ nội dung bản án từ pdf',
+                            `judgment_summarization` LONGTEXT comment 'nội dung tóm tắt bản án từ judgment_text',
                             `date_issued` date not null comment 'ngày công bố',
                             `date_upload` date not null comment 'ngày đăng lên hệ thống',
                             `url` varchar(255) not null comment 'link bản án',
@@ -155,7 +157,7 @@ def createTableJudgment():
                             CONSTRAINT `fk_case_judgment` FOREIGN KEY (`case_uid`) REFERENCES `case`(`uid`))"""
     cursor.execute(create_table_judgment)
     db.commit()
-    print("create table judgment")
+    # print("create table judgment")
 
 createTableCourt()
 createTableCase()

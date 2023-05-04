@@ -1,4 +1,69 @@
 from crawl import performCrawl
+from API import search, summarization
+from flask import Flask, jsonify, request
+from flask_cors import CORS
+from datetime import datetime
+
+app = Flask(__name__)
+CORS(app)
+
+# if __name__ == '__main__':
+#     performCrawl.funcMain("01/11/2022", "30/11/2022")
+
+@app.route('/crawler', methods=['POST'])
+def crawlJudgments():
+    filter = request.get_json()
+    date_from = datetime.strptime(filter['date_from'], '%Y-%m-%d').strftime('%d/%m/%Y')
+    date_to = datetime.strptime(filter['date_to'], '%Y-%m-%d').strftime('%d/%m/%Y')
+    print(date_from)
+    print(date_to)
+    totalCrawl = performCrawl.funcMain(date_from, date_to)
+    response = {
+        "message": "Tổng bản ghi đã crawl: " + str(totalCrawl),
+        "data": totalCrawl,
+        "status": 200,
+    }
+    return jsonify(response) 
+
+@app.route('/recommendation', methods=['GET'])
+def recommendation():
+    data = search.recommendation()
+    response = {
+        "message": "OK",
+        "data": data,
+        "status": 200,
+        "total_page": 1,
+        "size": 10,
+        "total": len(data),
+        "page": 1
+    }
+    return jsonify(response) 
+
+@app.route('/judgment/bm25', methods=['POST'])
+def searchJudgments():
+    data = search.search_judgments()
+    response = {
+            "message": "OK",
+            "data": data,
+            "status": 200,
+            "total_page": 1,
+            "size": 10,
+            "total": len(data),
+            "page": 1
+        }
+        
+    return jsonify(response)
+
+@app.route('/summarization', methods=['GET'])
+def summarizeJudgment():
+    output = summarization.summarize()
+    response = {
+        "message": "OK",
+        "data": output,
+        "status": 200,
+    }
+    return jsonify(response)
 
 if __name__ == '__main__':
-    performCrawl.funcMain("01/11/2022", "30/11/2022")
+    from waitress import serve
+    serve(app, host="127.0.0.1", port=5000)

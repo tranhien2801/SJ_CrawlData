@@ -84,7 +84,7 @@ def runCrawl(start, total_page, date_from, date_to, view_state):
         # print("done: " + str(page) + ": " + str(fn-st) + "--" + str(THREAD_FLAG))
 
     #function start threads
-    def doingThread():
+    def doingThread(count=0):
         page = start
         global new_judgment
         while page <= total_page and THREAD_FLAG==True:
@@ -111,7 +111,7 @@ def runCrawl(start, total_page, date_from, date_to, view_state):
             for jdg in new_judgment:
                 try:
                     saveDB.save_judgment(jdg)
-
+                    count += 1
                     d = datetime.strptime(jdg['date_issued'], '%d/%m/%Y').date().year
                     if d<2000 or d>datetime.today().year:
                         with open(constant.ABSOLUTEPATH+'exception.txt', 'a', encoding="utf-8") as wf:
@@ -123,14 +123,15 @@ def runCrawl(start, total_page, date_from, date_to, view_state):
                     with open(constant.ABSOLUTEPATH+'exception.txt', 'a', encoding="utf-8") as wf:
                         wf.write(jdg['url'] + " --- " + str(e) + "\n")
                         wf.close()
+        return count
 
     #main handle
     def mainHandle():
         global list_url_judgment
         list_url_judgment= set(saveDB.get_all_URL_judgment())
-        doingThread()
+        return doingThread()
 
-    mainHandle()
+    return mainHandle()
 
 
 # function run for a period of time
@@ -140,8 +141,9 @@ def funcMain(date_from, date_to):
     total_page = result['max_page']
     view_state = result['view_state']
     print(page_start, total_page, date_from, date_to)
-    runCrawl(page_start, total_page, date_from, date_to, view_state)
-
+    totalCrawl = runCrawl(page_start, total_page, date_from, date_to, view_state)
+    print("Tổng bản ghi đã crawl: ", totalCrawl)
+    return totalCrawl
 #function restart for a period of time
 def funcRestart(page_start, total_page, date_from, date_to):
     result = crawler.getSearchResult(constant.URL_SEARCH, date_from, date_to)
