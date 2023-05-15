@@ -21,37 +21,45 @@ model.to(device)
 print("Start summarize...")
 
 def summarize():
-    uid = request.args.get('uid', type=str)
-    query = "SELECT judgment_text FROM court.judgment WHERE uid = %s"
-    cursor.execute(query, (uid,))
-    judgment = cursor.fetchall()
-    src = judgment[0]['judgment_text']
-    
-    start = src.find("NỘI DUNG VỤ ÁN")
-    end = src.find("NHẬN ĐỊNH CỦA TÒA ÁN")
-    if start == -1:
-        start = src.find("XÉT THẤY")
-        end = src.find("QUYẾT ĐỊNH:")
-        print(start)
-    if start != -1 and end != -1:
-        text = src[start:end]
-    else: text = src[1000:10000]
-    
-    tokenized_text = tokenizer.encode(text, return_tensors="pt").to(device)
-    model.eval()
-    summary_ids = model.generate(tokenized_text,
-                    max_length=512, 
-                    num_beams=10,
-                    repetition_penalty=2.5, 
-                    length_penalty=2.0, 
-                    early_stopping=True
-                    )
-    output = tokenizer.decode(summary_ids[0], skip_special_tokens=True)
-    query = "UPDATE court.judgment SET judgment_summarization = %s WHERE uid = %s;"
-    cursor.execute(query, (output, uid))
-    db.commit()
-    print("Lưu tóm tắt vào DB....")
-       
-    return output
+    try:
+        uid = request.args.get('uid', type=str)
+        query = "SELECT judgment_summarization, judgment_text FROM court.judgment WHERE uid = %s"
+        cursor.execute(query, (uid,))
+        judgment = cursor.fetchall()
+        
+        if judgment[0]['judgment_summarization'] != None:
+            return judgment[0]['judgment_summarization']
+        
+        src = judgment[0]['judgment_text']
+        
+        start = src.find("NỘI DUNG VỤ ÁN")
+        end = src.find("NHẬN ĐỊNH CỦA TÒA ÁN")
+        if start == -1:
+            start = src.find("XÉT THẤY")
+            end = src.find("QUYẾT ĐỊNH:")
+            print(start)
+        if start != -1 and end != -1:
+            text = src[start:end]
+        else: text = src[1000:10000]
+        
+        tokenized_text = tokenizer.encode(text, return_tensors="pt").to(device)
+        model.eval()
+        summary_ids = model.generate(tokenized_text,
+                        max_length=512, 
+                        num_beams=10,
+                        repetition_penalty=2.5, 
+                        length_penalty=2.0, 
+                        early_stopping=True
+                        )
+        output = tokenizer.decode(summary_ids[0], skip_special_tokens=True)
+        query = "UPDATE court.judgment SET judgment_summarization = %s WHERE uid = %s;"
+        cursor.execute(query, (output, uid))
+        db.commit()
+        print("Lưu tóm tắt vào DB....")
+        
+        return output
+    except:
+        print("An exception occurred while summarizing...")
+        return None
 
    

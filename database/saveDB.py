@@ -83,7 +83,7 @@ def save_judgment(jdg):
                                                 precedent,
                                                 created) 
                       VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)'''
-    today = date.today()
+    today = datetime.now()
     cursor.execute(
         insert_judgment,
         (uid, judgment_number, judgment_name, type_document, judgment_level,

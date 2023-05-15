@@ -12,18 +12,28 @@ CORS(app)
 
 @app.route('/crawler', methods=['POST'])
 def crawlJudgments():
-    filter = request.get_json()
-    date_from = datetime.strptime(filter['date_from'], '%Y-%m-%d').strftime('%d/%m/%Y')
-    date_to = datetime.strptime(filter['date_to'], '%Y-%m-%d').strftime('%d/%m/%Y')
-    print(date_from)
-    print(date_to)
-    totalCrawl = performCrawl.funcMain(date_from, date_to)
-    response = {
-        "message": "Tổng bản ghi đã crawl: " + str(totalCrawl),
-        "data": totalCrawl,
-        "status": 200,
-    }
-    return jsonify(response) 
+    # try:
+        filter = request.get_json()
+        print(filter)
+        date_from = datetime.strptime(filter['date_from'], '%Y-%d-%m').strftime('%d/%m/%Y')
+        date_to = datetime.strptime(filter['date_to'], '%Y-%d-%m').strftime('%d/%m/%Y')
+        totalCrawl = performCrawl.funcMain(date_from, date_to)
+        response = {
+            "message": "Tổng bản ghi đã crawl: " + str(totalCrawl),
+            "data": {
+                "number_crawled": totalCrawl,
+                "date_crawled": datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+            },
+            "status": 200,
+        }
+        return jsonify(response) 
+    # except:
+    #     response = {
+    #         "message": "error",
+    #         "data": "",
+    #         "status": 500,
+    #     }
+    #     return jsonify(response)
 
 @app.route('/recommendation', methods=['GET'])
 def recommendation():
@@ -42,15 +52,26 @@ def recommendation():
 @app.route('/judgment/bm25', methods=['POST'])
 def searchJudgments():
     data = search.search_judgments()
-    response = {
-            "message": "OK",
-            "data": data,
-            "status": 200,
-            "total_page": 1,
-            "size": 10,
-            "total": len(data),
-            "page": 1
-        }
+    if data != None:
+        response = {
+                "message": "OK",
+                "data": data,
+                "status": 200,
+                "total_page": 1,
+                "size": 10,
+                "total": len(data),
+                "page": 1
+            }
+    else:
+        response = {
+                "message": "OK",
+                "data": data,
+                "status": 200,
+                "total_page": 1,
+                "size": 10,
+                "total": 0,
+                "page": 1
+            }
         
     return jsonify(response)
 

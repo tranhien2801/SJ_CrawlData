@@ -44,17 +44,20 @@ def search_list(search_list, num_results):
         top_indexes[i] = top_indexes[i] % number_judgment
     return set(top_indexes)
 
-def recommendation():   
-    indexes = search(request.args.get('content', type=str), 11)
-
-    data = []
-    for index in indexes:
-        data.append(judgments[index])
-        
-    return data
+def recommendation():  
+    try: 
+        indexes = search(request.args.get('content', type=str), 11)
+        data = []
+        for index in indexes:
+            data.append(judgments[index])
+            
+        return data
+    except:
+        print("An exception occurred")
+        return None
 
 def search_judgments():
-    # try:
+    try:
         print("Bắt đầu tìm kiếm theo BM25.........")
         filter = request.get_json()
         # Dịch nội dung tìm kiếm sang tiếng Anh để tìm từ đồng nghĩa
@@ -95,18 +98,14 @@ def search_judgments():
                 check = False
             if filter['precedent'] != None and filter['precedent'] != '' and (filter['precedent'] != True or judgments[index]['precedent'] == 0):
                 check = False
+            if filter['vote'] != None and filter['vote'] != '' and (filter['vote'] != True or judgments[index]['count_vote'] == 0):
+                check = False
             if check:
                 data.append(judgments[index])
             
         return data
-    # except:
-    #     print("An exception occurred")
-    #     response = {
-    #         "message": "error",
-    #         "data": None,
-    #         "status": 500,
-    #         "error": None
-    #     }
-    #     return jsonify(response)
+    except:
+        print("An exception occurred")
+        return None
 
 
